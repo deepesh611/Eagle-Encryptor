@@ -58,7 +58,7 @@ To use the Encryptor-Decryptor tool, follow these steps:
 
 ## **Usage**
 - Launch the tool using 
-```
+```bash
 & '.\Eagle Encryptor'
 ```
 
