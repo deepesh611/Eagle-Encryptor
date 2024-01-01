@@ -30,7 +30,6 @@ To use the Encryptor-Decryptor tool, follow these steps:
    
    ```bash
    git clone https://github.com/deepesh611/Eagle-Encryptor.git
-   cd Eagle-Encryptor
 
 
 3. **Install Dependencies:**
@@ -39,18 +38,20 @@ To use the Encryptor-Decryptor tool, follow these steps:
       `pip3`
       `MySQL` (Along with the Python-MySQL Connector (Available in MySQL Installer - Community))
 
-   - To install the application, all you have to do is clone the repo to the preferred location, and then run the setup file `setup.py`.
+   - To install the application, all you have to do is clone the repository to the preferred location, and then run the setup file `setup`.
    - After running the `setup`, refresh/reload the directory, now you should be able to see the application.
    
    - If the setup does not run, they try the below command after changing the directory to `Eagle-Encryptor`.
    ```bash
+   cd Eagle-Encryptor
    pip3 install -r requirements.txt
    
 
 5. **Run the Tool:**
-   ```bash
-   python setup.py
-   python main.py
+   ```terminal
+   & .\Setup.lnk
+   & '.\Eagle Encryptor.lnk'
+   
 
 ## **Usage**
 - Launch the tool using `python main.py`
