@@ -43,7 +43,7 @@ To use the Encryptor-Decryptor tool, follow these steps:
    
    - If the setup does not run, they try the below command after changing the directory to `Eagle-Encryptor`.
    ```bash
-   pip3 install -r ../requirements.txt
+   pip3 install -r requirements.txt
    
 
 5. **Run the Tool:**
