@@ -30,6 +30,7 @@ To use the Encryptor-Decryptor tool, follow these steps:
    
    ```bash
    git clone https://github.com/deepesh611/Eagle-Encryptor.git
+   ```
 
 
 3. **Install Dependencies:**
@@ -45,21 +46,27 @@ To use the Encryptor-Decryptor tool, follow these steps:
    ```bash
    cd Eagle-Encryptor
    pip3 install -r requirements.txt
+   ```
    
 
 5. **Run the Tool:**
    ```bash
    & .\Setup.lnk
    & '.\Eagle Encryptor.lnk'
+   ```
    
 
 ## **Usage**
-- Launch the tool using `python main.py`
-- Type `ls` or `help` to view the list of all the Commands
+- Launch the tool using 
+```
+& '.\Eagle Encryptor'
+```
+
+- Type `help` to view the list of all the Commands
 - Use the given commands to encrypt, decrypt, change password, or use other functions
 - Make sure that you do the following things after installation:
-  `hide the subfolder where the main Python script is stored`
-  `Copy the Application Shortcut to Desktop`
+- `hide the subfolder where the main Python script is stored`
+- `Copy the Application Shortcut to Desktop`
 
 ## **Contribution**
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to create an issue or submit a pull request.
