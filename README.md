@@ -4,7 +4,7 @@ This is a simple Python tool that allows users to encrypt and decrypt files of a
 
 ## Features
 
-1. **Text File Encryption:**
+1. **File Encryption:**
    - The tool supports the encryption of various text file formats such as `.word`, `.py`, `.txt`, `.jpg`, and more.
      
 
