@@ -1,6 +1,6 @@
 # *Eagle-Encryptor 2.1*
 
-Encryptor-Decryptor is a simple Python tool that allows users to encrypt and decrypt text files. It provides a user-friendly interface for securing files with encryption and managing a local list of up to 1000 encrypted files. Additionally, the list of files and their details are stored in a MySQL database for easy & secure retrieval. There is also a password required to open the application. By default the password is `admin` however, the application gives an option to change it.
+This is a simple Python tool that allows users to encrypt and decrypt files of a certain format. It provides a user-friendly interface for securing files with encryption and managing a local list of up to 1000 encrypted files. Additionally, the list of files and their details are stored in a MySQL database for easy & secure retrieval. There is also a password required to open the application. By default the password is `admin` however, the application gives an option to change it.
 
 ## Features
 
@@ -39,7 +39,8 @@ To use the Encryptor-Decryptor tool, follow these steps:
       `pip3`
       `MySQL` (Along with the Python-MySQL Connector (Available in MySQL Installer - Community))
 
-   - To install the application, all you have to do is clone the repo to the preferred location, and then run the setup file `setup.py`. 
+   - To install the application, all you have to do is clone the repo to the preferred location, and then run the setup file `setup.py`.
+   - After running the `setup`, refresh/reload the directory, now you should be able to see the application.
    
    - If the setup does not run, they try the below command after changing the directory to `Eagle-Encryptor`.
    ```bash
