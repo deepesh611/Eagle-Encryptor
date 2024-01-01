@@ -18,7 +18,7 @@ This is a simple Python tool that allows users to encrypt and decrypt files of a
 
 4. **MySQL Integration:**
    
-   - The list of files, along with their details, is stored in a MySQL database for efficient & secure organization and easy retrieval.
+   - The list of files, along with their details, is stored in a MySQL database for efficient & secured organization and easy retrieval.
 
 
 
