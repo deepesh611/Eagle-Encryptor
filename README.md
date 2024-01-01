@@ -29,7 +29,7 @@ To use the Encryptor-Decryptor tool, follow these steps:
 1. **Clone the Repository:**
    
    ```bash
-   git clone https://github.com/deepesh611/Eagle-Encryptor-1.4.git
+   git clone https://github.com/deepesh611/Eagle-Encryptor.git
    cd Eagle-Encryptor
 
 
