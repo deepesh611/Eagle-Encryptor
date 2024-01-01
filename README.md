@@ -27,7 +27,7 @@ This is a simple Python tool that allows users to encrypt and decrypt files of a
 To use the Encryptor-Decryptor tool, follow these steps:
 
 1. **Clone the Repository:**
-   
+   You can clone this repository by executing the following command on the terminal (cmd).
    ```bash
    git clone https://github.com/deepesh611/Eagle-Encryptor.git
    ```
