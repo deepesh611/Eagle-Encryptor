@@ -2,6 +2,14 @@
 
 This is a simple Python tool that allows users to encrypt and decrypt files of a certain format. It provides a user-friendly interface for securing files with encryption and managing a local list of up to 1000 encrypted files. Additionally, the list of files and their details are stored in a MySQL database for easy & secure retrieval. There is also a password required to open the application. By default the password is `admin` however, the application gives an option to change it.
 
+
+## Table of Contents
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contribution](#contribution)
+- [License](#license)
+
 ## Features
 
 1. **File Encryption:**
@@ -62,7 +70,27 @@ To use the Encryptor-Decryptor tool, follow these steps:
 & '.\Eagle Encryptor'
 ```
 
-- Type `help` to view the list of all the Commands
+- Here is a list of accepted file formats:
+   |    ***Domain***     |           ***Extensions***          |
+   | ------------------- | ----------------------------------  |
+   |        Text         | `.txt`,`.py`, `.pdf`,`.word`,`.xlsx`|
+   |       Images        |             `.png`,                 |
+ <br>
+- Type `help` to view the list of all the Commands:
+<br> <!-- Add a blank line here -->
+
+  |   ***COMMANDS***   |   ***TASK***                           |
+  | ------------------ | -------------------------------------- |
+  |        `ls`            |   Shows List of all Commands           |
+  |   `encf` / `ef`      |   Encrypt a File from Your List        |
+  |   `decf` / `df`      |   Decrypt a File from Your List        |
+  |   `view` / `v`       |   View List of Files                   |
+  |   `add` / `a`        |   Add a File in your List              |
+  |   `del` / `d`        |   Delete a File from Your List         |
+  |   `delall` / `da`    |   Delete All Files from the List       |
+  |   `pwd` / `cp`       |   Change Password                      |
+  |   `quit` / `q`       |   Exit the Application                 |
+  
 - Use the given commands to encrypt, decrypt, change password, or use other functions
 - Make sure that you do the following things after installation:
 - `hide the subfolder where the main Python script is stored`
