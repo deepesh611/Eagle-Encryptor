@@ -73,8 +73,8 @@ To use the Encryptor-Decryptor tool, follow these steps:
 - Here is a list of accepted file formats:
    |    ***Domain***     |           ***Extensions***          |
    | ------------------- | ----------------------------------  |
-   |        Text         | `.txt`,`.py`, `.pdf`,`.word`,`.xlsx`|
-   |       Images        |             `.png`,                 |
+   |        Text         | `.txt`,`.py`, `.pdf`,`.word`,`.xlsx`, `.html`, `.css`, `.c`, `.cpp`, `.php`|
+   |       Images        |             `.png`, `.ico`, `.jpg`, `.jpeg`, `.img`                |
  <br>
 - Type `help` to view the list of all the Commands:
 <br> <!-- Add a blank line here -->
