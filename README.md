@@ -14,6 +14,7 @@ This is a simple Python tool that allows users to encrypt and decrypt files of a
 
 1. **File Encryption:**
    - The tool supports the encryption of various text file formats such as `.word`, `.py`, `.txt`, `.jpg`, and more.
+   - A list of all supported formates is given below.
      
 
 2. **Password Management:**
@@ -60,8 +61,9 @@ To use the Encryptor-Decryptor tool, follow these steps:
 
 5. **Run the Tool:**
    ```bash
-   & .\Setup.lnk
-   & '.\Eagle Encryptor.lnk'
+   cd '.\!@#$%\'
+   & .\setup.py
+   & .\main.py
    ```
    
 
@@ -95,7 +97,7 @@ To use the Encryptor-Decryptor tool, follow these steps:
 - Use the given commands to encrypt, decrypt, change password, or use other functions
 - Make sure that you do the following things after installation:
 - `hide the subfolder where the main Python script is stored`
-- `Copy the Application Shortcut to Desktop`
+- `Create the Application Shortcut to Desktop`
 
 ## **Contribution**
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to create an issue or submit a pull request.
