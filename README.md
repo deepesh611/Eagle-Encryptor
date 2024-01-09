@@ -45,7 +45,7 @@ To use the Encryptor-Decryptor tool, follow these steps:
    - Before Installing the Application, make sure that you have the following things installed.
       `Python (3.11.x)`
       `pip3`
-      `MySQL` (Along with the Python-MySQL Connector (Available in MySQL Installer - Community))
+      `MySQL` (Along with the `Python-MySQL Connector` (Available in MySQL Installer - Community))
 
    - To install the application, all you have to do is clone the repository to the preferred location, and then run the setup file `setup`.
    - After running the `setup`, refresh/reload the directory, now you should be able to see the application.
