@@ -9,3 +9,5 @@ pyfiglet
 colorama
 threaded
 pyarmor
+openpyxl
+cryptography
