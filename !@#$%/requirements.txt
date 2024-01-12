@@ -1,0 +1,13 @@
+emoji
+pwinput
+mysql-connector-python
+pyPDF2
+docx
+python_docx
+subprocess.run
+pyfiglet
+colorama
+threaded
+pyarmor
+openpyxl
+cryptography
