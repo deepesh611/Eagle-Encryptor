@@ -8,6 +8,5 @@ subprocess.run
 pyfiglet
 colorama
 threaded
-pyarmor
 openpyxl
 cryptography
