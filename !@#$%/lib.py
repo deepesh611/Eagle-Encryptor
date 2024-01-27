@@ -284,7 +284,7 @@ def encrypt():
                 print('This Application does not support',ext,'type of files.\nTry some other format.\n')
                 time.sleep(2)
         except:
-            print('An error occured while encrypting the file.\nTry verifying the file details/path and try again.')
+            print(Fore.RED + 'An error occured while encrypting the file.\nTry verifying the file details/path and try again.' + Fore.RESET)
             time.sleep(2)
         
 
@@ -336,7 +336,7 @@ def decrypt():
                 print('This Application does not support',ext,'type of files.\nTry some other format.\n')
                 time.sleep(2)
         except:
-            print('An error occured while decrypting the file.\nTry verifying the file details/path and try again.')
+            print(Fore.RED + 'An error occured while decrypting the file.\nTry verifying the file details/path and try again.' + Fore.RESET)
             time.sleep(2)
 
 
@@ -357,7 +357,7 @@ def view_file_list():
         else:
             print(Fore.RED + 'No Files Added to the List.\n' + Fore.RESET)
     except:
-        print('Unable to connect to the MySQL Database.\nPlease verify the MySQL password, by running the setup file and try again later.')
+        print(Fore.RED + 'Unable to connect to the MySQL Database.\nPlease verify the MySQL password, by running the setup file and try again later.' + Fore.RESET)
 
 
 
@@ -474,7 +474,7 @@ def delete_file():
             db.commit()
             print(Fore.GREEN + 'File Deleted\n' + Fore.RESET)
     except:
-        print('An error occured while deleting the file\nTry Again Later !')
+        print(Fore.RED + 'An error occured while deleting the file\nTry Again Later !' + Fore.RESET)
 
 
 
@@ -538,25 +538,29 @@ def sql_setup(sql_pwd):
         f.close()
         encrypt1('./!#%/sql_pwd.txt')
         
-        print('\nSQL Password Saved')
-        time.sleep(0.5)
+        try:
+            print('\nSQL Password Saved')
+            time.sleep(0.5)
+            db = mys.connect(host = 'localhost', user = 'root', passwd = sql_pwd)
+            cursor = db.cursor()
+            cursor.execute('CREATE DATABASE IF NOT EXISTS files')
+            db.commit()
+            print('Database Created')
+            time.sleep(0.5)
 
-        db = mys.connect(host = 'localhost', user = 'root', passwd = sql_pwd)
-        cursor = db.cursor()
-        cursor.execute('CREATE DATABASE IF NOT EXISTS files')
-        db.commit()
-        print('Database Created')
-        time.sleep(0.5)
 
+            cursor.execute('USE files')
+            cursor.execute('CREATE TABLE IF NOT EXISTS files (fid int primary key not null, fname varchar(100) not null, fpath varchar(200) not null)')
+            db.commit()
+            print('Table Created')
 
-        cursor.execute('USE files')
-        cursor.execute('CREATE TABLE IF NOT EXISTS files (fid int primary key not null, fname varchar(100) not null, fpath varchar(200) not null)')
-        db.commit()
-        print('Table Created')
-
-        cursor.execute('truncate files')
-        db.commit()
-        time.sleep(1)
+            cursor.execute('truncate files')
+            db.commit()
+            time.sleep(1)
+        
+        except:
+            print(Fore.RED + 'An Unexpected error occured while creating the Database.\nPlease make sure that you have installed MySQL along with the Python-Connector (Steps mentioned in the README file).' + Fore.RESET)
+        
     except:
         print(Fore.RED + 'An Unexpected Error Occured, please refer to the README file for manual installation.\n' + Fore.RESET)
 
@@ -603,7 +607,7 @@ def enc_img(fpath):
 
         
     except Exception:
-        print('Error caught : ', Exception.__name__)
+        print(Fore.RED + 'Error caught : ', Exception.__name__ + Fore.RESET)
 
 
 
@@ -647,7 +651,7 @@ def dec_img(fpath):
 
 
     except Exception:
-        print('Error caught : ', Exception.__name__)
+        print(Fore.RED + 'Error caught : ', Exception.__name__ + Fore.RESET)
 
 
 

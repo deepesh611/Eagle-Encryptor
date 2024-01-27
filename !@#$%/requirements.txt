@@ -1,12 +1,17 @@
-emoji
-pwinput
-mysql-connector-python
-pyPDF2
-docx
-python_docx
-subprocess.run
-pyfiglet
-colorama
-threaded
-openpyxl
-cryptography
+
+# ───────────────────────────────
+#   APPLICATION DEPENDENCIES
+# ───────────────────────────────
+
+docx==0.2.4
+emoji==1.6.1
+pwinput==0.2.1
+pyPDF2==1.26.0
+colorama==0.4.4
+threaded==0.1.0
+openpyxl==3.0.9
+python-docx==0.8.11
+pyfiglet==0.8.post1
+cryptography==35.0.0
+subprocess.run==0.0.8
+mysql-connector-python==8.0.28
