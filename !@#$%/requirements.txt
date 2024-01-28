@@ -16,3 +16,6 @@ pyfiglet == 0.8.post1
 cryptography == 42.0.1
 subprocess.run == 0.0.8
 mysql-connector-python == 8.3.0
+
+
+# ───────────────────────────────
