@@ -54,16 +54,14 @@ To use the Encryptor-Decryptor tool, follow these steps:
    - If the setup does not run, they try the below command after changing the directory to `Eagle-Encryptor`.
    ```bash
    cd Eagle-Encryptor
-   pip3 install subprocess.run pyarmor
-   pip3 install -r requirements.txt
+   pip3 install subprocess.run
    ```
    
 
 5. **Run the Tool:**
    ```bash
-   cd '.\!@#$%\'
-   & .\setup.py
-   & .\main.py
+   python3 .\!@#$%\setup.py
+   python3 .\!@#$%\main.py
    ```
    
 
@@ -82,9 +80,9 @@ To use the Encryptor-Decryptor tool, follow these steps:
 - Type `help` to view the list of all the Commands:
 <br> <!-- Add a blank line here -->
 
-  |   ***COMMANDS***   |   ***TASK***                           |
-  | ------------------ | -------------------------------------- |
-  |        `ls`            |   Shows List of all Commands           |
+  |   ***COMMANDS***     |   ***TASK***                           |
+  | ------------------   | -------------------------------------- |
+  |        `ls`          |   Shows List of all Commands           |
   |   `encf` / `ef`      |   Encrypt a File from Your List        |
   |   `decf` / `df`      |   Decrypt a File from Your List        |
   |   `view` / `v`       |   View List of Files                   |
