@@ -20,18 +20,6 @@ from colorama import Fore
 
 
 
-# GETTING THE MYSQLV PASSWORD
-flag = True
-key = b'ZI3z97SW4jyVejL34EDOYTRYp-o3XwDoVFxybaiCqP0='
-try:
-    f = open('./!#%/sql_pwd.txt','r')
-    sql_pwd = f.read()
-    f.close()
-except:
-    sql_pwd = ''
-
-
-
 
 # USING THE ASCII-ART TO DISPLAY THE APPLICATION NAME
 def ascii_art():
@@ -747,6 +735,20 @@ def dec_audio(file_path, key):
 
 
 
+# GETTING THE MYSQL PASSWORD and the KEY
+flag = True
 
+decrypt1('./!#%/key.txt')
+f = open('./!#%/key.txt','r')
+key = f.read()
+f.close()
+encrypt1('./!#%/key.txt')
 
-     
+try:
+    f = open('./!#%/sql_pwd.txt','r')
+    sql_pwd = f.read()
+    f.close()
+except:
+    sql_pwd = ''
+    
+    
