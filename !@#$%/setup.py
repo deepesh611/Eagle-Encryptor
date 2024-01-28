@@ -82,12 +82,12 @@ except:
     
 lib.sql_setup(sql_pwd)
 
-print(lib.Fore.GREEN + 'Setup Completed...\n' + lib.Fore.RESET)
+print(Fore.GREEN + 'Setup Completed...\n' + Fore.RESET)
 time.sleep(2)
 
-print('If you run the Setup file again, your previous data of this program will be lost.\n')
+print(Fore.RED + 'If you run the Setup file again, your previous data of this program will be lost.\n' + Fore.RESET)
 time.sleep(1)
-print('You can close this window and run the main program\nEnjoy Encrypting !\n\n  🔓🔑🔒 -> 🔐\n')
+print(Fore.LIGHTCYAN_EX + 'You can close this window and run the main program\nEnjoy Encrypting !\n\n  🔓🔑🔒 -> 🔐\n')
 time.sleep(3)
 
-input('Press Enter to Exit...')
+input('Press Enter to Exit...' + Fore.RESET)
