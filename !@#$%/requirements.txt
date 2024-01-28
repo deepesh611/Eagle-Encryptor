@@ -3,6 +3,7 @@
 #   APPLICATION DEPENDENCIES
 # ───────────────────────────────
 
+
 docx==0.2.4
 emoji==1.6.1
 pwinput==0.2.1
