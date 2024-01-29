@@ -12,7 +12,7 @@ pyarmor gen lib.py main.py setup.py
 Move-Item '!#%' ./dist
 
 # Remove original scripts
-# Remove-Item lib.py, main.py, setup.py
+Remove-Item lib.py, main.py, setup.py
 
 # Run setup script
 cd dist
