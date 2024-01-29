@@ -8,6 +8,7 @@ docx == 0.2.4
 emoji == 1.6.1
 pwinput == 1.0.3
 pyPDF2 == 1.26.0
+pyarmor == 8.4.7
 colorama == 0.4.6
 threaded == 4.2.0
 openpyxl == 3.1.2
