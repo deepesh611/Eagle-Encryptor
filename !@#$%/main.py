@@ -48,5 +48,3 @@ while True:
     else:
         print(lib.Fore.RED + 'Command Not Found!\n' + lib.Fore.RESET)
         time.sleep(1)
-
-    

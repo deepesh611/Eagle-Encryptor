@@ -12,8 +12,8 @@ except:
     sql_pwd = input("\nENTER MySQL PASSWORD :\n")
     
 lib.sql_setup(sql_pwd)
-
-print(Fore.GREEN + 'Setup Completed...\n' + Fore.RESET)
+time.sleep(1)
+print(Fore.GREEN + '\nSetup Completed...\n' + Fore.RESET)
 time.sleep(2)
 
 print(Fore.RED + 'If you run the Setup file again, your previous data of this program will be lost.\n' + Fore.RESET)

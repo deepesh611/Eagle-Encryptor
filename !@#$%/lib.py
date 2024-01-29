@@ -331,7 +331,7 @@ def decrypt():
 
 # FUNCTION THAT SHOWS ALL THE FILES PRESENT IN THE LIST
 def view_file_list():
-    try:   
+    # try:   
         db = mys.connect(host = 'localhost', user = 'root', passwd = sql_pwd, database = 'files')
         cursor = db.cursor()
         cursor.execute('select * from file_list')
@@ -344,8 +344,8 @@ def view_file_list():
             print('\n')
         else:
             print(Fore.RED + 'No Files Added to the List.\n' + Fore.RESET)
-    except:
-        print(Fore.RED + 'Unable to connect to the MySQL Database.\nPlease verify the MySQL password, by running the setup file and try again later.' + Fore.RESET)
+    # except:
+    #     print(Fore.RED + 'Unable to connect to the MySQL Database.\nPlease verify the MySQL password, by running the setup file and try again later.' + Fore.RESET)
 
 
 
@@ -517,43 +517,6 @@ def menu():
 
 
 
-# FUNCTION TO SETUP CONNECTION
-def sql_setup(sql_pwd):
-    try:
-        decrypt1('./!#%/sql_pwd.txt')
-        f = open('./!#%/sql_pwd.txt','w')
-        f.write(hashlib.sha256(sql_pwd.encode()).hexdigest())
-        f.close()
-        encrypt1('./!#%/sql_pwd.txt')
-        
-        try:
-            print('\nSQL Password Saved')
-            time.sleep(0.5)
-            db = mys.connect(host = 'localhost', user = 'root', passwd = sql_pwd)
-            cursor = db.cursor()
-            cursor.execute('CREATE DATABASE IF NOT EXISTS files')
-            db.commit()
-            print('Database Created')
-            time.sleep(0.5)
-
-
-            cursor.execute('USE files')
-            cursor.execute('CREATE TABLE IF NOT EXISTS files (fid int primary key not null, fname varchar(100) not null, fpath varchar(200) not null)')
-            db.commit()
-            print('Table Created')
-
-            cursor.execute('truncate files')
-            db.commit()
-            time.sleep(1)
-        
-        except:
-            print(Fore.RED + 'An Unexpected error occured while creating the Database.\nPlease make sure that you have installed MySQL along with the Python-Connector (Steps mentioned in the README file).' + Fore.RESET)
-        
-    except:
-        print(Fore.RED + 'An Unexpected Error Occured, please refer to the README file for manual installation.\n' + Fore.RESET)
-
-
-
 # FUNCTION TO ENCRYPT AN IMAGE
 def enc_img(fpath):
     key = 127
@@ -640,6 +603,41 @@ def dec_img(fpath):
 
     except Exception:
         print(Fore.RED + 'Error caught : ', Exception.__name__ + Fore.RESET)
+
+
+
+# FUNCTION TO SETUP CONNECTION
+def sql_setup(sql_pwd):
+    try:
+        f = open('./!#%/sql_pwd.txt','w')
+        f.write(sql_pwd)
+        f.close()
+        encrypt1('./!#%/sql_pwd.txt')
+        
+        try:
+            print('\nSQL Password Saved')
+            time.sleep(0.5)
+            db = mys.connect(host = 'localhost', user = 'root', passwd = sql_pwd)
+            cursor = db.cursor()
+            cursor.execute('CREATE DATABASE IF NOT EXISTS files')
+            db.commit()
+            print('Database Created')
+            time.sleep(0.5)
+
+
+            cursor.execute('USE files')
+            cursor.execute('CREATE TABLE IF NOT EXISTS file_list (fid int primary key not null, fname varchar(100) not null, fpath varchar(200) not null)')
+            db.commit()
+            print('Table Created')
+            cursor.execute('truncate files')
+            db.commit()
+            time.sleep(1)
+        
+        except:
+            print(Fore.RED + 'An Unexpected error occured while creating the Database.\nPlease make sure that you have installed MySQL along with the Python-Connector (Steps mentioned in the README file).' + Fore.RESET)
+        
+    except:
+        print(Fore.RED + 'An Unexpected Error Occured, please refer to the README file for manual installation.\n' + Fore.RESET)
 
 
 
@@ -738,16 +736,14 @@ def dec_audio(file_path, key):
 # GETTING THE MYSQL PASSWORD and the KEY
 flag = True
 
-decrypt1('./!#%/key.txt')
-f = open('./!#%/key.txt','r')
-key = f.read()
-f.close()
-encrypt1('./!#%/key.txt')
+key = b'XMsqZg0m2J02ufe1WX_MYQB2Uwh4UnBnzRzGr2oyOBs='
 
 try:
+    decrypt1('./!#%/sql_pwd.txt')
     f = open('./!#%/sql_pwd.txt','r')
     sql_pwd = f.read()
     f.close()
+    encrypt1('./!#%/sql_pwd.txt')
 except:
     sql_pwd = ''
     
