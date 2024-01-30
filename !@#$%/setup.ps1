@@ -5,7 +5,7 @@ Write-Host "Time: $(Get-Date -Format 'HH:mm:ss')"
 Write-Host
 
 Write-Host "Installing dependencies..."
-cd '.\!@#$%'
+
 # Install Python dependencies
 pip install -r requirements.txt
 pyarmor gen lib.py main.py setup.py
