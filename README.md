@@ -48,21 +48,22 @@ To use the Encryptor-Decryptor tool, follow these steps:
       `pip3`
       `MySQL` (Along with the `Python-MySQL Connector` (Available in MySQL Installer - Community))
 
-   - To install the application, all you have to do is clone the repository to the preferred location, and then run the setup file `setup`.
-   - After running the `setup`, refresh/reload the directory, now you should be able to see the application.
-   
-   - If the setup does not run, they try the below command after changing the directory to `Eagle-Encryptor`.
-   ```bash
-   cd Eagle-Encryptor
-   pip3 install subprocess.run
+   - To install the application, all you have to do is clone the repository to the preferred location, then enter the following commands in `Powershell`/`CMD`. **(RUN AS ADMINISTRATOR)**
+  ```bash
+cd '.\Eagle Encryptor'
+.\setup.ps1
    ```
-   
-
+   - If the terminal shows an error to run the script, try the following commands:
+```bash
+Set-ExecutionPolicy RemoteSigned
+.\setup.ps1
+Set-ExecutionPolicy Restricted
+```
+     
+  
 5. **Run the Tool:**
-   ```bash
-   python3 .\!@#$%\setup.py
-   python3 .\!@#$%\main.py
-   ```
+   If the setup is complete, then there should a new application in the folder.
+   `Eagle-Encryptor`
    
 
 ## **Usage**
