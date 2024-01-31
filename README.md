@@ -57,7 +57,6 @@ cd '.\Eagle Encryptor'
 ```bash
 Set-ExecutionPolicy RemoteSigned
 .\setup.ps1
-Set-ExecutionPolicy Restricted
 ```
      
   
