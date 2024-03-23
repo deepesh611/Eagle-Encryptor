@@ -377,11 +377,11 @@ def decrypt1(path):
 
 # FUNCTION TO CHECK THE PASSWORD SET BY THE USER
 def check():
-    decrypt1('./!#%/pwd.txt')
-    f = open('./!#%/pwd.txt','r')
+    decrypt1('../!#%/pwd.txt')
+    f = open('../!#%/pwd.txt','r')
     data = f.read()
     f.close()
-    encrypt1('./!#%/pwd.txt')
+    encrypt1('../!#%/pwd.txt')
 
     p = pwinput.pwinput(prompt ="\nENTER PASSWORD :\n", mask="*")
     print()
@@ -397,24 +397,24 @@ def check():
    
 # FUNCTION TO CHANGE THE USER SET PASSOWRD
 def cng_pwd():
-    decrypt1('./!#%/pwd.txt')
-    f = open('./!#%/pwd.txt','r')
+    decrypt1('../!#%/pwd.txt')
+    f = open('../!#%/pwd.txt','r')
     data = f.read()
     f.close()
-    encrypt1('./!#%/pwd.txt')
+    encrypt1('../!#%/pwd.txt')
 
     o = pwinput.pwinput(prompt ="ENTER PREVIOUSLY SET PASSWORD :\n", mask="*")
     print()
 
     if hashlib.sha256(o.encode()).hexdigest() == data:
-        decrypt1('./!#%/pwd.txt')
-        f = open('./!#%/pwd.txt','w')
+        decrypt1('../!#%/pwd.txt')
+        f = open('../!#%/pwd.txt','w')
         p = pwinput.pwinput(prompt ="ENTER THE NEW PASSWORD :\n", mask="*")
         print()
         f.write(hashlib.sha256(p.encode()).hexdigest())
         print(Fore.GREEN + 'Password was Successfully Changed.\n' + Fore.RESET)
         f.close()
-        encrypt1('./!#%/pwd.txt')
+        encrypt1('../!#%/pwd.txt')
     else:
         print(Fore.RED + 'INVALID PASSWORD !' + Fore.RESET)
         print('   ',(emoji.emojize(":pensive_face:"))*3,'\n')
@@ -477,24 +477,23 @@ def outro(path):
 
 # FUNCTION WHICH DELETES ALL THE FILES FROM THE LOCAL LIST
 def delete_all():
-    decrypt1('./!#%/pwd.txt')
-    f = open('./!#%/pwd.txt','r')
+    decrypt1('../!#%/pwd.txt')
+    f = open('../!#%/pwd.txt','r')
     data = f.read()
     f.close()
-    encrypt1('./!#%/pwd.txt')
+    encrypt1('../!#%/pwd.txt')
 
     p = pwinput.pwinput(prompt ="\nPLEASE ENTER PASSWORD BEFORE PROCEEDING :\n", mask="*")
     print()
-    while p == data:
+    if hashlib.sha256(p.encode()).hexdigest() == data:
         db = mys.connect(host = 'localhost', user = 'root', passwd = sql_pwd, database = 'files')
         cursor = db.cursor()
 
         cursor.execute('truncate file_list')
         print(Fore.GREEN + 'All Files Deleted !\n' + Fore.RESET)
-        break
 
     else:
-        print(Fore.RED + +'Invalid Password !\n' + Fore.RESET)
+        print(Fore.RED + 'Invalid Password !\n' + Fore.RESET)
         print('   ',(emoji.emojize(":pensive_face:"))*3)
 
 
@@ -739,11 +738,11 @@ flag = True
 key = b'XMsqZg0m2J02ufe1WX_MYQB2Uwh4UnBnzRzGr2oyOBs='
 
 try:
-    decrypt1('./!#%/sql_pwd.txt')
-    f = open('./!#%/sql_pwd.txt','r')
+    decrypt1('../!#%/sql_pwd.txt')
+    f = open('../!#%/sql_pwd.txt','r')
     sql_pwd = f.read()
     f.close()
-    encrypt1('./!#%/sql_pwd.txt')
+    encrypt1('../!#%/sql_pwd.txt')
 except:
     sql_pwd = ''
     
