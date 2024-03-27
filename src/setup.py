@@ -18,7 +18,7 @@ time.sleep(2)
 
 print(Fore.RED + 'If you run the Setup file again, your previous data of this program will be lost.\n' + Fore.RESET)
 time.sleep(1)
-print(Fore.LIGHTCYAN_EX + 'You can close this window and run the main program\nEnjoy Encrypting !\n\n  🔓🔑🔒 -> 🔐\n')
+print(Fore.LIGHTCYAN_EX + 'You can close this window and run the main program\nEnjoy Encrypting !\n\n  🔓🔑🔒 -> 🔐\n' + Fore.RESET)
 time.sleep(3)
 
 
