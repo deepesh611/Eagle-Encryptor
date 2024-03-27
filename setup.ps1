@@ -7,3 +7,4 @@ pip install -r requirements.txt
 
 pyarmor gen ./setup.py ./main.py ./lib.py
 
+cd ..
