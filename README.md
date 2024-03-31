@@ -4,10 +4,10 @@ This is a simple Python tool that allows users to encrypt and decrypt files of a
 
 
 ## Table of Contents
-- 🚀 [Features](#features)
-- 🛠️ [Getting Started](#getting-started)
-- 📝 [Usage](#usage)
-- 🤝 [Contribution](#contribution)
+- 🚀 [Features](#-features)
+- 🛠️ [Getting Started](#-getting-started)
+- 📝 [Usage](#-usage)
+- 🤝 [Contribution](#-contribution)
 - 📄 [License](#license)
 
 ## 🚀 Features
