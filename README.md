@@ -1,37 +1,32 @@
-# *Eagle-Encryptor 2.1*
+# 🦅 *Eagle-Encryptor 2.1*
 
 This is a simple Python tool that allows users to encrypt and decrypt files of a certain format. It provides a user-friendly interface for securing files with encryption and managing a local list of up to 1000 encrypted files. Additionally, the list of files and their details are stored in a MySQL database for easy & secure retrieval. There is also a password required to open the application. By default the password is `admin` however, the application gives an option to change it.
 
 
 ## Table of Contents
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contribution](#contribution)
-- [License](#license)
+- [🚀 Features](#features)
+- [🛠️ Getting Started](#getting-started)
+- [📝 Usage](#usage)
+- [🤝 Contribution](#contribution)
+- [📄 License](#license)
 
-## Features
+## 🚀 Features
 
 1. **File Encryption:**
    - The tool supports the encryption of various text file formats such as `.word`, `.py`, `.txt`, `.jpg`, and more.
-   - A list of all supported formates is given below.
-     
+   - A list of all supported formats is given below.
 
 2. **Password Management:**
    - Users can set and change the application password if they wish to.
-     
 
 3. **Local File-Location Storage:**
    - The tool can manage a local list of storing up to 1000 file paths so that the user does not have to give the file path every time the user opens the application.
-     
 
 4. **MySQL Integration:**
-   
    - The list of files, along with their details, is stored in a MySQL database for efficient & secured organization and easy retrieval.
 
 
-
-## Getting Started
+## 🛠️ Getting Started
 
 To use the Encryptor-Decryptor tool, follow these steps:
 
@@ -65,7 +60,7 @@ Set-ExecutionPolicy RemoteSigned
    `Eagle-Encryptor`
    
 
-## **Usage**
+## 📝 **Usage**
 - Launch the tool using 
 ```bash
 & '.\Eagle Encryptor'
@@ -97,8 +92,8 @@ Set-ExecutionPolicy RemoteSigned
 - `hide the subfolder where the main Python script is stored`
 - `Create the Application Shortcut to Desktop`
 
-## **Contribution**
+## 🤝 **Contribution**
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to create an issue or submit a pull request.
 
-## **License**
+## 📄 **License**
 This project is licensed under the MIT License.
