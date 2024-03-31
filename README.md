@@ -4,11 +4,11 @@ This is a simple Python tool that allows users to encrypt and decrypt files of a
 
 
 ## Table of Contents
-- [🚀 Features](#features)
-- [🛠️ Getting Started](#getting-started)
-- [📝 Usage](#usage)
-- [🤝 Contribution](#contribution)
-- [📄 License](#license)
+- 🚀 [Features](#features)
+- 🛠️ [Getting Started](#getting-started)
+- 📝 [Usage](#usage)
+- 🤝 [Contribution](#contribution)
+- 📄 [License](#license)
 
 ## 🚀 Features
 
@@ -95,5 +95,5 @@ Set-ExecutionPolicy RemoteSigned
 ## 🤝 **Contribution**
 Contributions are welcome! If you find any issues or have suggestions for improvements, feel free to create an issue or submit a pull request.
 
-## 📄 **License**
+## 📄**License**
 This project is licensed under the MIT License.
