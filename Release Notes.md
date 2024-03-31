@@ -13,6 +13,7 @@
 - 🔐 Added a password system for secure access to the application.
 - 🎨 Enhanced CLI interface with application name for better user experience.
 - 🛠 Improved error handling for smoother operation.
+- 🛠 Removing the readable application libraries.
 
 
 ## Version 3.0 (Current Version)
