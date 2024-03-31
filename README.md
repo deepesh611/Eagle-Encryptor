@@ -29,7 +29,7 @@ This simple Python tool allows users to encrypt and decrypt files of a certain f
    - The tool can manage a local list of storing up to 1000 file paths so that the user does not have to give the file path every time the user opens the application.
 
 4. **MySQL Integration:**
-   - The list of files, along with their details, is stored in a MySQL database for efficient & secured organization and easy retrieval.
+   - The list of files is stored in a MySQL database for efficient & secure organization and easy retrieval.
 
 
 ## 🛠️ Getting Started
@@ -44,12 +44,12 @@ To use the Encryptor-Decryptor tool, follow these steps:
 
 
 3. **Install Dependencies:**
-   - Before Installing the Application, make sure that you have the following things installed.
+   - Before Installing the Application,t you should have the following installed.
       `Python (3.11.x)`
       `pip3`
-      `MySQL` (Along with the `Python-MySQL Connector` (Available in MySQL Installer - Community))
+      `MySQL` (Along with the `Python-MySQL Connector` (Available in MySQL Installer - Community)) OR you can proceed with the `Wampserver64`
 
-   - To install the application, all you have to do is clone the repository to the preferred location, then enter the following commands in `Powershell`/`CMD`. **(RUN AS ADMINISTRATOR)**
+   - To install the application, clone this repository to the preferred location, then enter the following commands in `Powershell`/`CMD`. **(RUN AS ADMINISTRATOR)**
   ```bash
 cd '.\Eagle Encryptor'
 .\setup.ps1
@@ -59,17 +59,13 @@ cd '.\Eagle Encryptor'
 Set-ExecutionPolicy RemoteSigned
 .\setup.ps1
 ```
-     
-  
-5. **Run the Tool:**
-   If the setup is complete, then there should a new application in the folder.
-   `Eagle-Encryptor`
    
 
 ## 📝 **Usage**
 - Launch the tool using 
 ```bash
-& '.\Eagle Encryptor'
+cd src
+python ./dist/main.py
 ```
 
 - Here is a list of accepted file formats:
@@ -93,7 +89,7 @@ Set-ExecutionPolicy RemoteSigned
   |   `pwd` / `cp`       |   Change Password                      |
   |   `quit` / `q`       |   Exit the Application                 |
   
-- Use the given commands to encrypt, decrypt, change password, or use other functions
+- Use the given commands to encrypt, decrypt, change the password, or use other functions
 - Make sure that you do the following things after installation:
 - `hide the subfolder where the main Python script is stored`
 - `Create the Application Shortcut to Desktop`
