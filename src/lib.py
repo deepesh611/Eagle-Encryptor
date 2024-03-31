@@ -390,6 +390,7 @@ def check():
     print()
     if hashlib.sha256(p.encode()).hexdigest() == data:
         pass
+    
     else:
         print(Fore.RED + 'INVALID PASSWORD !' + Fore.RESET) 
         print('   ',(emoji.emojize(":pensive_face:"))*3)
