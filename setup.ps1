@@ -12,7 +12,7 @@ python setup.py
 pyarmor gen ./setup.py ./main.py ./lib.py
 
 # Delete the original files
-Remove-Item ./setup.py, ./main.py, ./lib.py
+# Remove-Item ./setup.py, ./main.py, ./lib.py
 
 # Change directory back to the previous location
 Set-Location ..

@@ -1,4 +1,4 @@
-# 🦅 *Eagle-Encryptor 2.1*
+# 🦅 *Eagle-Encryptor 3.0*
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white)
@@ -75,7 +75,7 @@ Set-ExecutionPolicy RemoteSigned
 - Here is a list of accepted file formats:
    |    ***Domain***     |           ***Extensions***          |
    | ------------------- | ----------------------------------  |
-   |        Text         | `.txt`,`.py`, `.pdf`,`.word`,`.xlsx`, `.html`, `.css`, `.c`, `.cpp`, `.php`|
+   |        Text         | `.txt`,`.py`, `.pdf`,`.word`,`.xlsx`, `.html`, `.css`, `.c`, `.cpp`, `.php`, etc.|
    |       Images        |             `.png`, `.ico`, `.jpg`, `.jpeg`, `.img`                |
  <br>
 - Type `help` to view the list of all the Commands:
