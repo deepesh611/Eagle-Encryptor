@@ -16,6 +16,7 @@ This simple Python tool allows users to encrypt and decrypt files of a certain f
 - 📝 [Usage](#-usage)
 - 🤝 [Contribution](#-contribution)
 - 📄 [License](#license)
+- [Release Notes](https://github.com/deepesh611/Eagle-Encryptor/blob/main/Release%20Notes.md)
 
 ## 🚀 Features
 
